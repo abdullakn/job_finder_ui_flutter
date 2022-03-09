@@ -33,22 +33,23 @@ class SearchBox extends StatelessWidget {
                 height: 1.8, color: Colors.white, fontWeight: FontWeight.w400),
           ),
           SizedBox(
-            height: 10,
+            height: 30,
           ),
           Container(
-              padding: EdgeInsets.all(15),
+              padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30), color: Colors.white),
               child: Stack(
                 children: [
                   TextFormField(
-                    
                     decoration: InputDecoration(
-                      contentPadding: EdgeInsets.symmetric(vertical: 0),
-                        border: InputBorder.none, hintText: "Search here..."),
+                        contentPadding: EdgeInsets.symmetric(vertical: 0),
+                        border: InputBorder.none,
+                        hintText: "Search here..."),
                   ),
                   Positioned(
-                    right: 10,
+                      top: 5,
+                      right: 10,
                       child: IconButton(
                           onPressed: () {}, icon: Icon(Icons.search)))
                 ],
