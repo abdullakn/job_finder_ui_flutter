@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:job_finder/screens/home/widgets/home_appbar.dart';
+import 'package:job_finder/screens/home/widgets/search_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({ Key? key }) : super(key: key);
@@ -18,7 +19,8 @@ class HomePage extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              HomeAppBar()
+              HomeAppBar(),
+              SearchBox()
 
             ],
           )
