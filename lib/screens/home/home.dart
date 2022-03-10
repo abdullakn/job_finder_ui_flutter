@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:job_finder/screens/home/widgets/home_appbar.dart';
+import 'package:job_finder/screens/home/widgets/job_list.dart';
 import 'package:job_finder/screens/home/widgets/search_card.dart';
 import 'package:job_finder/screens/home/widgets/tag_list.dart';
 
@@ -22,7 +23,8 @@ class HomePage extends StatelessWidget {
             children: [
               HomeAppBar(),
               SearchBox(),
-              TagButton()
+              TagButton(),
+              JobList()
 
             ],
           )
