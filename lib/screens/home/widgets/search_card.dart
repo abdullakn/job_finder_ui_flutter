@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:job_finder/screens/search/search.dart';
 
 class SearchBox extends StatelessWidget {
   const SearchBox({Key? key}) : super(key: key);
@@ -41,12 +42,24 @@ class SearchBox extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30), color: Colors.white),
               child: Stack(
                 children: [
-                  TextFormField(
-                    decoration: InputDecoration(
-                        contentPadding: EdgeInsets.symmetric(vertical: 0),
-                        border: InputBorder.none,
-                        hintText: "Search here..."),
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>SearchPage()));
+                    },
+                    child: Container(
+                      alignment: Alignment.center,
+                      width: double.maxFinite,
+                      height: 30,
+                      child: Text('Search...'),
+                    ),
                   ),
+                  // Text('Search'),
+                  // TextFormField(
+                  //   decoration: InputDecoration(
+                  //       contentPadding: EdgeInsets.symmetric(vertical: 0),
+                  //       border: InputBorder.none,
+                  //       hintText: "Search here..."),
+                  // ),
                   Positioned(
                       top: 5,
                       right: 10,
