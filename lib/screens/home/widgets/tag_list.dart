@@ -13,7 +13,7 @@ class _TagButtonState extends State<TagButton> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+      margin: EdgeInsets.symmetric( horizontal: 25),
       height: 40,
       child: ListView.separated(
           scrollDirection: Axis.horizontal,

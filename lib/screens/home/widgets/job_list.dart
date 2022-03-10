@@ -11,9 +11,14 @@ class JobList extends StatelessWidget {
       // margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
       height: 160,
       child: ListView.separated(
-        padding: EdgeInsets.symmetric(horizontal: 25),
-        scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) => JobItem(job: jobList[index]),
+          padding: EdgeInsets.symmetric(horizontal: 25),
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) =>
+              GestureDetector(
+                onTap: (){
+                  showModalBottomSheet(context: context, builder: builder)
+                },
+                child: JobItem(job: jobList[index])),
           separatorBuilder: (_, index) => SizedBox(
                 width: 15,
               ),
