@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:job_finder/screens/home/widgets/search_card.dart';
+import 'package:job_finder/screens/home/widgets/tag_list.dart';
 import 'package:job_finder/screens/search/widgets/search_appbar.dart';
+import 'package:job_finder/screens/search/widgets/search_input.dart';
+import 'package:job_finder/screens/search/widgets/search_tag.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({ Key? key }) : super(key: key);
@@ -19,7 +23,9 @@ class SearchPage extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SearchAppBar()
+                SearchAppBar(),
+                SearchInput(),
+                SearchTag()
 
               ],
             )
